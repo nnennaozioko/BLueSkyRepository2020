@@ -75,4 +75,21 @@ public class BlueSkyCitadelForm {
     public void iClickOnTheRadioButton() {
         driver.findElement(By.cssSelector("#nf-label-class-field-138-0")).click();
     }
+
+    @When("^I click on Event$")
+    public void iClickOnEvent() {
+        driver.findElement(By.linkText("Events")).click();
+
+    }
+
+    @And("^I enter Event Date$")
+    public void iEnterEventDate() {
+        driver.findElement(By.cssSelector("#tribe-bar-date")).sendKeys("29/08/2020");
+
+    }
+
+    @And("^I enter Keyword$")
+    public void iEnterKeyword() {
+        driver.findElement(By.cssSelector("#tribe-bar-search")).sendKeys("Birthdate");
+    }
 }

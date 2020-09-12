@@ -16,3 +16,10 @@ Feature: BlueSky Form Test
     And I enter password
     And I click on the radio button
     Then I close my window
+
+  Scenario: Event
+    Given I navigate to blueskycitadelform site
+    When I click on Event
+    And I enter Event Date
+    And I enter Keyword
+    Then I close my window
